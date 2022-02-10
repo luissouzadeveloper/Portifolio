@@ -1,0 +1,241 @@
+/*Formatação geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Importação das fontes*/
+@font-face {
+    font-family: 'Cocogoose';
+    src: url(../fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+}
+@font-face {
+    font-family: 'Destaque';
+    src: url(../fonts/BebasNeue-Regular.otf);
+}
+
+/*Variáveis*/
+:root{
+    --destaque: Destaque;
+    --cocogoose: Cocogoose;
+    --cor1: #2727ff;
+    --cor2: #fff;
+    --cor3: #4b4bff;
+    --cor4: #000;
+}
+
+/*Corpo da página*/
+body{
+    font-family: var(--cocogoose);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*Cabeçalho*/
+.cabecalho{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 70px;
+}
+
+/*Título do cabeçalho*/
+.cabecalho > h1{
+    text-align: center;
+    color: var(--cor2);
+    font-family: var(--destaque);
+}
+
+/*Menu*/
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+    background-color: var(--cor3);
+}
+
+/*Item do menu*/
+.item{
+    color: var(--cor2);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.item:hover{
+    text-decoration: underline;
+}
+
+/*Corpo central*/
+main{
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*Container*/
+div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+/*Descrição da div*/
+.info{
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    font-weight: bolder;
+}
+
+/*Imagem*/
+.photo{
+    margin: 20px auto;
+    width: 100%;
+}
+
+.foto-pessoal{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+/*Conteúdo dos projetos*/
+article > h1{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 5px;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--cor2);
+    font-family: var(--destaque);
+}
+
+/*Parágrafo*/
+article > p{
+    margin: 40px auto;
+    text-align: center;
+}
+
+/*Container dos projetos*/
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*Imagem do container dos projetos*/
+.foto-projeto{
+    width: 200px;
+    height: 200px;  
+}
+
+/*Projetos em amostra*/
+.projeto{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.quad-image > figcaption{
+    text-align: center;
+    font-family: var(--destaque);
+}
+
+/*Extras dos projetos*/
+.projeto-mais{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+/*Formatação do parágrafo dentro da bola */
+.projeto-mais > p{
+    text-align: center;
+    line-height: 200px;
+}
+
+/*Formatação do link dentro da bola*/
+.projeto-mais > p > a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+.projeto-mais > p > a:hover{
+    text-decoration: underline;
+}
+
+/*Rodapé*/
+footer{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 7px;
+}
+
+footer > p{
+    text-align: center;
+    color: var(--cor2);
+}
+
+/*Tablets*/
+@media(max-width: 800px){
+    
+    /*Menu*/
+
+    /*Corpo da página*/
+    main{
+        max-width: 700px;
+        padding: 25px;
+        margin: auto;
+    }
+
+    /*Container primário*/
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+/*Mobile*/
+@media(max-width: 600px){
+    /*Menu*/
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 7px;
+        background-color: var(--cor3);
+    }
+    
+    /*Item do menu*/
+    .item{
+        color: #4040ff;
+        background: #fff;
+        text-decoration: none;
+        transition: 1s;
+        text-align: center;
+        margin: 10px 0px;
+        border: 2px solid var(--cor2);
+    }
+    
+    .item:hover{
+        text-decoration: underline;
+    }
+
+    /*Corpo da página*/
+    main{
+        max-width: 600px;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    /*Extras dos projetos*/
+    .projeto-mais{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 35px 0px;
+}
+}
