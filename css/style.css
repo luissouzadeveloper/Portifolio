@@ -228,6 +228,18 @@ footer > p{
 
     .container{
         flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    /*Imagem*/
+    .photo{
+        margin: 30px auto;
+        width: 100%;
+
+    }
+
+    .foto-pessoal{
+        width: 100%;
     }
 
     /*Extras dos projetos*/
