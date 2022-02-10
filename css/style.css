@@ -235,11 +235,16 @@ footer > p{
     .photo{
         margin: 30px auto;
         width: 100%;
-
+        padding: 20px;
     }
 
     .foto-pessoal{
         width: 100%;
+    }
+
+    /*Descrição da div*/
+    .info > p{
+        text-align: center;  
     }
 
     /*Extras dos projetos*/
