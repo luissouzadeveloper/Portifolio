@@ -211,8 +211,8 @@ footer > p{
         text-decoration: none;
         transition: 1s;
         text-align: center;
-        margin: 10px 0px;
-        border: 2px solid var(--cor2);
+        margin: 5px 0px;
+        border: 1px solid var(--cor2);
     }
     
     .item:hover{
@@ -236,10 +236,6 @@ footer > p{
         margin: 30px auto;
         width: 100%;
         padding: 10px;
-    }
-
-    .foto-pessoal{
-        width: 100%;
     }
 
     /*Descrição da div*/
