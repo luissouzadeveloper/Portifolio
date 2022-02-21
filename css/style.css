@@ -211,6 +211,7 @@ footer > p{
         text-decoration: none;
         transition: 1s;
         text-align: center;
+        padding: 3px;
         margin: 5px 0px;
         border: 1px solid var(--cor2);
     }
