@@ -195,30 +195,6 @@ footer > p{
 
 /*Mobile*/
 @media(max-width: 600px){
-    /*Menu*/
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 7px;
-        background-color: var(--cor3);
-    }
-    
-    /*Item do menu*/
-    .item{
-        color: #4040ff;
-        background: #fff;
-        text-decoration: none;
-        transition: 1s;
-        text-align: center;
-        padding: 3px;
-        margin: 5px 0px;
-        border: 1px solid var(--cor2);
-    }
-    
-    .item:hover{
-        text-decoration: underline;
-    }
 
     /*Corpo da página*/
     main{

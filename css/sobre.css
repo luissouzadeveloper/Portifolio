@@ -1,0 +1,96 @@
+/*Formatação geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Importação das fontes*/
+@font-face {
+    font-family: 'Cocogoose';
+    src: url(../fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+}
+@font-face {
+    font-family: 'Destaque';
+    src: url(../fonts/BebasNeue-Regular.otf);
+}
+
+/*Variáveis*/
+:root{
+    --destaque: Destaque;
+    --cocogoose: Cocogoose;
+    --cor1: #2727ff;
+    --cor2: #fff;
+    --cor3: #4b4bff;
+    --cor4: #000;
+}
+
+/*Corpo da página*/
+body{
+    font-family: var(--cocogoose);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*Cabeçalho*/
+.cabecalho{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 70px;
+}
+
+/*Título do cabeçalho*/
+.cabecalho > h1{
+    text-align: center;
+    color: var(--cor2);
+    font-family: var(--destaque);
+}
+
+/*Menu*/
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+    background-color: var(--cor3);
+}
+
+/*Item do menu*/
+.item{
+    color: var(--cor2);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.item:hover{
+    text-decoration: underline;
+}
+
+/*Corpo do contéudo*/
+main{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+/*Título principal*/
+.titulo{
+    text-align: center;
+    margin: 20px;
+    font-family: var(--destaque);
+    border-bottom: 1px solid black;
+}
+
+/*Parágrafo*/
+.paragrafo{
+    margin: 20px;
+}
+
+/*Rodapé*/
+footer{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 7px;
+}
+
+footer > p{
+    text-align: center;
+    color: var(--cor2);
+}
