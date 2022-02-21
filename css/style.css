@@ -239,6 +239,11 @@ footer > p{
         padding: 10px;
     }
 
+    article{
+        margin: 0px;
+        padding: 20px;
+    }
+
     /*Descrição da div*/
     .info > p{
         text-align: center;  
